@@ -34,8 +34,8 @@ export function Brief() {
   }
 
   return (
-    <section id="contact" className="mx-auto max-w-[1280px] px-7 pt-24">
-      <div className="grid gap-12 rounded-2xl border border-border bg-card p-10 lg:grid-cols-[1.2fr_1fr]">
+    <section id="contact" className="mx-auto max-w-[1280px] px-5 pt-16 sm:px-7 md:pt-24">
+      <div className="grid gap-8 rounded-2xl border border-border bg-card p-6 sm:p-8 md:gap-12 md:p-10 lg:grid-cols-[1.2fr_1fr]">
         <div>
           <div className="mb-3 font-mono text-[11px] uppercase tracking-[1px] text-muted-foreground">
             — {lang === "fr" ? "Brief express" : "Express brief"}
@@ -63,7 +63,7 @@ export function Brief() {
 
         <form
           onSubmit={onSubmit}
-          className="flex flex-col gap-3 rounded-xl bg-muted p-6"
+          className="flex flex-col gap-3 rounded-xl bg-muted p-4 sm:p-6"
         >
           <Field
             label={lang === "fr" ? "Nom & société" : "Name & company"}

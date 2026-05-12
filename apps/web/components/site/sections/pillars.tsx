@@ -12,12 +12,12 @@ export function Pillars() {
   return (
     <section
       id="expertises"
-      className="mx-auto max-w-[1280px] px-7 pt-20"
+      className="mx-auto max-w-[1280px] px-5 pt-16 sm:px-7 md:pt-20"
     >
       <div className="mb-3 font-mono text-[11px] uppercase tracking-[1px] text-muted-foreground">
         — {lang === "fr" ? "Trois piliers" : "Three pillars"}
       </div>
-      <h2 className="m-0 mb-12 max-w-[900px] font-sans text-[clamp(36px,5vw,56px)] font-medium leading-[1.05] tracking-[-1.6px]">
+      <h2 className="m-0 mb-8 max-w-[900px] font-sans text-[clamp(28px,5vw,56px)] font-medium leading-[1.05] tracking-[-1px] sm:tracking-[-1.6px] md:mb-12">
         {lang === "fr"
           ? "Un même cadre d'exécution pour architecturer, connecter et automatiser."
           : "A single execution framework to architect, connect and automate."}

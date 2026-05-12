@@ -11,19 +11,19 @@ export function Modes() {
   return (
     <section
       id="solutions"
-      className="mx-auto max-w-[1280px] px-7 pt-24"
+      className="mx-auto max-w-[1280px] px-5 pt-16 sm:px-7 md:pt-24"
     >
       <div className="mb-3 font-mono text-[11px] uppercase tracking-[1px] text-muted-foreground">
         — {lang === "fr" ? "Modes" : "Modes"}
       </div>
-      <h2 className="m-0 mb-9 max-w-[800px] font-sans text-[clamp(32px,4.5vw,48px)] font-medium leading-[1.05] tracking-[-1.4px]">
+      <h2 className="m-0 mb-7 max-w-[800px] font-sans text-[clamp(26px,4.5vw,48px)] font-medium leading-[1.05] tracking-[-1px] sm:tracking-[-1.4px] md:mb-9">
         {pick(OKA.modesTitle, lang) as string}
       </h2>
 
       <div className="grid gap-4 md:grid-cols-2">
         {OKA.modes.map((m, i) => (
           <Reveal key={m.tag} delay={i * 0.08}>
-            <article className="h-full rounded-xl border border-border bg-card p-7">
+            <article className="h-full rounded-xl border border-border bg-card p-5 sm:p-7">
               <div className="mb-5 flex items-center justify-between">
                 <span className="rounded-full bg-muted px-2.5 py-1 font-mono text-[11px] tracking-[0.6px] text-muted-foreground">
                   {m.tag}

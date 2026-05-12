@@ -6,7 +6,7 @@ import { Pillars } from "../components/site/sections/pillars";
 import { Modes } from "../components/site/sections/modes";
 import { Situations } from "../components/site/sections/situations";
 import { Work, type WorkProject } from "../components/site/sections/work";
-import { Products } from "../components/site/sections/products";
+// import { Products } from "../components/site/sections/products"; // masqué jusqu'à ce que les produits soient livrables
 import { Brief } from "../components/site/sections/brief";
 import { SiteFooter } from "../components/site/sections/footer";
 
@@ -37,7 +37,7 @@ export default async function Home() {
         <Modes />
         <Situations />
         <Work projects={projects} />
-        <Products />
+        {/* <Products /> — masqué jusqu'à ce que les produits soient livrables */}
         <Brief />
       </main>
       <SiteFooter />

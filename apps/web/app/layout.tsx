@@ -1,5 +1,10 @@
-import type { Metadata } from "next";
-import { Inter_Tight, JetBrains_Mono, Anton, Cormorant_Garamond } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import {
+  Inter_Tight,
+  JetBrains_Mono,
+  Anton,
+  Cormorant_Garamond,
+} from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 
@@ -29,10 +34,104 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://okatech.fr";
+const TITLE = "Okatech — Du logiciel qui transforme l'activité";
+const DESCRIPTION =
+  "Studio produit indépendant basé à Paris. 6 ans à concevoir, livrer et opérer des plateformes SaaS pour des équipes qui n'ont pas le droit à l'erreur. L'IA dans la boîte à outils — quand elle accélère vraiment.";
+
 export const metadata: Metadata = {
-  title: "Okatech — Du logiciel qui transforme l'activité",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: TITLE,
+    template: "%s · Okatech",
+  },
+  description: DESCRIPTION,
+  applicationName: "Okatech",
+  keywords: [
+    "studio produit",
+    "SaaS",
+    "IA appliquée",
+    "transformation digitale",
+    "plateformes métier",
+    "RAG",
+    "copilote",
+    "Paris",
+    "Next.js",
+    "Convex",
+  ],
+  authors: [{ name: "Okatech" }],
+  creator: "Okatech",
+  publisher: "Okatech",
+  alternates: {
+    canonical: "/",
+    languages: { fr: "/", en: "/" },
+  },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    alternateLocale: ["en_US"],
+    url: "/",
+    siteName: "Okatech",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Okatech — Studio produit Paris",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/opengraph-image"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  icons: { icon: "/favicon.ico" },
+  category: "technology",
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#FBFAF7" },
+    { media: "(prefers-color-scheme: dark)", color: "#0B0B0A" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+};
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Okatech",
+  alternateName: "OKA Tech",
+  url: SITE_URL,
+  email: "admin@okatech.fr",
+  telephone: "+33661002616",
   description:
-    "Studio produit indépendant basé à Paris. 6 ans à concevoir, livrer et opérer des plateformes SaaS pour des équipes qui n'ont pas le droit à l'erreur.",
+    "Studio produit indépendant basé à Paris. Plateformes SaaS, transformation digitale et IA appliquée.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "50 Avenue des Champs Élysées",
+    postalCode: "75008",
+    addressLocality: "Paris",
+    addressCountry: "FR",
+  },
+  areaServed: "FR",
+  knowsAbout: [
+    "SaaS platforms",
+    "Applied AI",
+    "Digital transformation",
+    "RAG",
+    "Business copilots",
+  ],
 };
 
 export default function RootLayout({
@@ -46,6 +145,11 @@ export default function RootLayout({
         className={`${interTight.variable} ${jetbrainsMono.variable} ${anton.variable} ${cormorant.variable}`}
       >
         <Providers>{children}</Providers>
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
       </body>
     </html>
   );

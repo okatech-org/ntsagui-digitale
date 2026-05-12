@@ -10,15 +10,15 @@ export function Hero() {
   const h = OKA.hero;
 
   return (
-    <section className="mx-auto max-w-[1280px] px-7 pb-8 pt-20">
+    <section className="mx-auto max-w-[1280px] px-5 pb-6 pt-12 sm:px-7 md:pb-8 md:pt-20">
       <Reveal>
-        <div className="mb-7 inline-flex items-center gap-2 rounded-full bg-accent-soft px-3 py-1.5 font-mono text-[11px] font-medium text-accent">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-accent-soft px-3 py-1.5 font-mono text-[11px] font-medium text-accent md:mb-7">
           <Icon.dot s={6} />
           {pick(h.super, lang) as string}
         </div>
       </Reveal>
 
-      <h1 className="m-0 max-w-[1000px] font-sans text-[clamp(56px,9vw,96px)] font-medium leading-[0.98] tracking-[-3px]">
+      <h1 className="m-0 max-w-[1000px] font-sans text-[clamp(40px,10vw,96px)] font-medium leading-[1] tracking-[-1.5px] sm:leading-[0.98] sm:tracking-[-2px] md:tracking-[-3px]">
         <span>{pick(h.line1, lang) as string} </span>
         <span className="text-foreground/40">
           {pick(h.line2, lang) as string}{" "}
@@ -26,26 +26,26 @@ export function Hero() {
         <span>{pick(h.line3, lang) as string}</span>
       </h1>
 
-      <p className="mb-9 mt-8 max-w-[640px] text-[18px] leading-[1.55] text-muted-foreground">
+      <p className="mb-7 mt-6 max-w-[640px] text-[16px] leading-[1.55] text-muted-foreground md:mb-9 md:mt-8 md:text-[18px]">
         {pick(h.sub, lang) as string}
       </p>
 
       <div className="flex flex-wrap items-center gap-3">
         <a
           href="#contact"
-          className="inline-flex items-center gap-2.5 rounded-lg bg-primary px-4.5 py-3 font-sans text-[14px] font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          className="inline-flex items-center gap-2.5 rounded-lg bg-primary px-4 py-3 font-sans text-[14px] font-medium text-primary-foreground transition-opacity hover:opacity-90 md:px-4.5"
         >
           {pick(h.primary, lang) as string}
           <Icon.arrow s={12} />
         </a>
         <a
           href="#resultats"
-          className="inline-flex items-center gap-2.5 rounded-lg border border-border-soft bg-transparent px-4.5 py-3 font-sans text-[14px] font-medium text-foreground transition-colors hover:bg-muted"
+          className="inline-flex items-center gap-2.5 rounded-lg border border-border-soft bg-transparent px-4 py-3 font-sans text-[14px] font-medium text-foreground transition-colors hover:bg-muted md:px-4.5"
         >
           {pick(h.secondary, lang) as string}
           <Icon.arrowR s={12} />
         </a>
-        <span className="ml-3 flex items-center gap-2 font-mono text-[12px] text-muted-foreground">
+        <span className="flex items-center gap-2 font-mono text-[12px] text-muted-foreground sm:ml-3">
           <span
             className="h-[7px] w-[7px] rounded-full bg-success"
             style={{ boxShadow: "0 0 0 4px var(--success-glow)" }}
@@ -54,7 +54,7 @@ export function Hero() {
         </span>
       </div>
 
-      <div className="mt-16 grid gap-4 lg:grid-cols-[1.05fr_1fr]">
+      <div className="mt-10 grid gap-4 md:mt-16 lg:grid-cols-[1.05fr_1fr]">
         <CodeCard lang={lang} />
         <TerminalCard />
       </div>

@@ -11,18 +11,18 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-6 px-7 py-3.5">
-        <div className="flex items-center gap-2.5">
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-3 px-4 py-3 sm:gap-6 sm:px-7 sm:py-3.5">
+        <a href="#" className="flex items-center gap-2 sm:gap-2.5">
           <span className="inline-flex h-[22px] w-[22px] items-center justify-center rounded-[5px] bg-primary text-primary-foreground font-mono text-[12px] font-semibold">
             O
           </span>
           <span className="font-sans text-[15px] font-semibold tracking-[-0.2px]">
             okatech
           </span>
-          <span className="ml-1 font-mono text-[11px] text-muted-foreground">
+          <span className="ml-1 hidden font-mono text-[11px] text-muted-foreground sm:inline">
             / studio
           </span>
-        </div>
+        </a>
 
         <nav className="hidden gap-1 md:flex">
           {OKA.nav.map((n) => (
@@ -36,8 +36,8 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2.5">
-          <div className="flex overflow-hidden rounded-md border border-border-soft">
+        <div className="flex items-center gap-1.5 sm:gap-2.5">
+          <div className="hidden overflow-hidden rounded-md border border-border-soft sm:flex">
             {(["fr", "en"] as Lang[]).map((l) => (
               <button
                 key={l}
@@ -54,6 +54,14 @@ export function SiteHeader() {
               </button>
             ))}
           </div>
+
+          <button
+            onClick={() => setLang(lang === "fr" ? "en" : "fr")}
+            aria-label={`Switch language to ${lang === "fr" ? "EN" : "FR"}`}
+            className="inline-flex h-8 items-center rounded-md border border-border-soft px-2 font-mono text-[11px] uppercase text-muted-foreground transition-colors hover:text-foreground sm:hidden"
+          >
+            {lang}
+          </button>
 
           <button
             onClick={toggle}
@@ -96,9 +104,12 @@ export function SiteHeader() {
 
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-md bg-primary px-3.5 py-2 font-sans text-[13px] font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            className="inline-flex items-center gap-2 rounded-md bg-primary px-3 py-2 font-sans text-[13px] font-medium text-primary-foreground transition-opacity hover:opacity-90 sm:px-3.5"
+            aria-label={pick(OKA.hero.primary, lang) as string}
           >
-            {pick(OKA.hero.primary, lang) as string}
+            <span className="hidden sm:inline">
+              {pick(OKA.hero.primary, lang) as string}
+            </span>
             <Icon.arrow s={11} />
           </a>
         </div>
