@@ -14,10 +14,10 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-3 px-4 py-3 sm:gap-6 sm:px-7 sm:py-3.5">
         <a href="#" className="flex items-center gap-2 sm:gap-2.5">
           <span className="inline-flex h-[22px] w-[22px] items-center justify-center rounded-[5px] bg-primary text-primary-foreground font-mono text-[12px] font-semibold">
-            O
+            N
           </span>
           <span className="font-sans text-[15px] font-semibold tracking-[-0.2px]">
-            okatech
+            ntsagui
           </span>
           <span className="ml-1 hidden font-mono text-[11px] text-muted-foreground sm:inline">
             / studio

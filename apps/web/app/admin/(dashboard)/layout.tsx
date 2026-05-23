@@ -15,9 +15,9 @@ export default function AdminShell({
             className="flex items-center gap-2.5 font-sans font-semibold"
           >
             <span className="inline-flex h-[22px] w-[22px] items-center justify-center rounded-[5px] bg-primary text-primary-foreground font-mono text-[12px] font-semibold">
-              O
+              N
             </span>
-            okatech
+            ntsagui
             <span className="font-mono text-[11px] font-normal text-muted-foreground">
               / admin
             </span>

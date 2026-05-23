@@ -34,8 +34,8 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://okatech.fr";
-const TITLE = "Okatech — Du logiciel qui transforme l'activité";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ntsagui.com";
+const TITLE = "Ntsagui Digitale — Du logiciel qui transforme l'activité";
 const DESCRIPTION =
   "Studio produit indépendant basé à Paris. 6 ans à concevoir, livrer et opérer des plateformes SaaS pour des équipes qui n'ont pas le droit à l'erreur. L'IA dans la boîte à outils — quand elle accélère vraiment.";
 
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: TITLE,
-    template: "%s · Okatech",
+    template: "%s · Ntsagui Digitale",
   },
   description: DESCRIPTION,
-  applicationName: "Okatech",
+  applicationName: "Ntsagui Digitale",
   keywords: [
     "studio produit",
     "SaaS",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
     "Next.js",
     "Convex",
   ],
-  authors: [{ name: "Okatech" }],
-  creator: "Okatech",
-  publisher: "Okatech",
+  authors: [{ name: "Ntsagui Digitale" }],
+  creator: "Ntsagui Digitale",
+  publisher: "Ntsagui Digitale",
   alternates: {
     canonical: "/",
     languages: { fr: "/", en: "/" },
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     alternateLocale: ["en_US"],
     url: "/",
-    siteName: "Okatech",
+    siteName: "Ntsagui Digitale",
     title: TITLE,
     description: DESCRIPTION,
     images: [
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Okatech — Studio produit Paris",
+        alt: "Ntsagui Digitale — Studio produit Paris",
       },
     ],
   },
@@ -109,10 +109,10 @@ export const viewport: Viewport = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Okatech",
-  alternateName: "OKA Tech",
+  name: "Ntsagui Digitale",
+  alternateName: "Ntsagui",
   url: SITE_URL,
-  email: "admin@okatech.fr",
+  email: "admin@ntsagui.com",
   telephone: "+33661002616",
   description:
     "Studio produit indépendant basé à Paris. Plateformes SaaS, transformation digitale et IA appliquée.",

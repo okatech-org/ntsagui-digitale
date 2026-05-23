@@ -14,9 +14,9 @@ export function SiteFooter() {
         <div>
           <div className="mb-3.5 flex items-center gap-2.5">
             <span className="inline-flex h-[22px] w-[22px] items-center justify-center rounded-[5px] bg-primary text-primary-foreground font-mono text-[12px] font-semibold">
-              O
+              N
             </span>
-            <span className="font-sans text-[15px] font-semibold">okatech</span>
+            <span className="font-sans text-[15px] font-semibold">ntsagui</span>
           </div>
           <p className="m-0 max-w-[360px] text-[13px] leading-[1.55] text-muted-foreground">
             {lang === "fr"
@@ -59,7 +59,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="mt-8 flex flex-col justify-between gap-2 border-t border-dashed border-border-soft pt-4.5 font-mono text-[11px] text-muted-foreground sm:flex-row">
-        <span>© Okatech {new Date().getFullYear()}</span>
+        <span>© Ntsagui Digitale {new Date().getFullYear()}</span>
         <span>Paris · France</span>
       </div>
     </footer>

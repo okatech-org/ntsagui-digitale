@@ -11,8 +11,8 @@ export const OKA = {
   ],
   hero: {
     super: {
-      fr: "OKA Tech · Studio produit · Paris",
-      en: "OKA Tech · Product studio · Paris",
+      fr: "Ntsagui Digitale · Studio produit · Paris",
+      en: "Ntsagui Digitale · Product studio · Paris",
     },
     line1: { fr: "Du logiciel", en: "Software" },
     line2: { fr: "qui transforme", en: "that moves" },
@@ -189,7 +189,7 @@ export const OKA = {
   products: [
     {
       id: "core",
-      name: "Okatech Core",
+      name: "Ntsagui Digitale Core",
       body: {
         fr: "Plateforme d'évaluation et de déploiement de prompts. Le moteur derrière nos missions, désormais accessible.",
         en: "Prompt evaluation and deployment platform. The engine behind our work, now available.",
@@ -197,7 +197,7 @@ export const OKA = {
     },
     {
       id: "atlas",
-      name: "Okatech Atlas",
+      name: "Ntsagui Digitale Atlas",
       body: {
         fr: "Observabilité dédiée aux applications LLM : coûts, latence, dérive sémantique, conformité.",
         en: "Observability for LLM applications: cost, latency, semantic drift, compliance.",
@@ -205,7 +205,7 @@ export const OKA = {
     },
     {
       id: "skills",
-      name: "Okatech Skills",
+      name: "Ntsagui Digitale Skills",
       body: {
         fr: "Bibliothèque de compétences testées (RAG, agents, voice) à brancher dans votre application.",
         en: "Library of tested skills (RAG, agents, voice) to plug into your application.",
@@ -232,7 +232,7 @@ export const OKA = {
       "Code, data and AI hosted in Europe by default",
     ],
   },
-  email: "admin@okatech.fr",
+  email: "admin@ntsagui.com",
   phone: "+33 (0) 6 61 00 26 16",
   location: {
     fr: "50 Avenue des Champs Élysées, 75008 Paris",

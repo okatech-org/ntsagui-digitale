@@ -83,9 +83,9 @@ function CodeCard({ lang }: { lang: "fr" | "en" }) {
       </div>
       <pre className="m-0 overflow-x-auto whitespace-pre p-5 font-mono text-[13.5px] leading-[1.7] text-foreground">
         <span className="text-syntax-keyword">import</span>{" "}
-        <span>{`{ Okatech }`}</span>{" "}
+        <span>{`{ Ntsagui }`}</span>{" "}
         <span className="text-syntax-keyword">from</span>{" "}
-        <span className="text-syntax-string">{`"@okatech/stack"`}</span>
+        <span className="text-syntax-string">{`"@ntsagui/stack"`}</span>
         {";\n\n"}
         <span className="text-muted-foreground">
           {"// "}
@@ -97,7 +97,7 @@ function CodeCard({ lang }: { lang: "fr" | "en" }) {
         <span className="text-syntax-keyword">const</span>
         {" service "}
         <span className="text-accent">{"="}</span>
-        {" Okatech"}
+        {" Ntsagui"}
         {"\n  ."}
         <span className="text-accent">architect</span>
         {"({"}
@@ -139,7 +139,7 @@ function TerminalCard() {
           className="font-mono text-[11px]"
           style={{ color: "var(--terminal-dim)" }}
         >
-          okatech ▸ run
+          ntsagui ▸ run
         </span>
         <span className="flex items-center gap-1.5">
           <span className="h-[7px] w-[7px] rounded-full bg-[#7CC272]" />
@@ -153,7 +153,7 @@ function TerminalCard() {
       </div>
       <div className="p-5 font-mono text-[13px] leading-[1.8]">
         <div style={{ color: "var(--terminal-dim)" }}>
-          $ okatech build --domain clinical-ops
+          $ ntsagui build --domain clinical-ops
         </div>
         <div style={{ color: "#7CC272" }}>
           ✓{" "}

@@ -12,7 +12,7 @@ export function Products() {
   return (
     <section className="mx-auto max-w-[1280px] px-7 pt-24">
       <div className="mb-3 font-mono text-[11px] uppercase tracking-[1px] text-muted-foreground">
-        — {lang === "fr" ? "Produits Okatech" : "Okatech products"}
+        — {lang === "fr" ? "Produits Ntsagui Digitale" : "Ntsagui Digitale products"}
       </div>
       <h2 className="m-0 mb-9 max-w-[800px] font-sans text-[clamp(32px,4.5vw,48px)] font-medium leading-[1.05] tracking-[-1.4px]">
         {lang === "fr"

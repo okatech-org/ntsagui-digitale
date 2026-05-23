@@ -16,9 +16,9 @@ export default async function LoginPage({
       >
         <div className="mb-2 flex items-center gap-2.5">
           <span className="inline-flex h-[22px] w-[22px] items-center justify-center rounded-[5px] bg-primary text-primary-foreground font-mono text-[12px] font-semibold">
-            O
+            N
           </span>
-          <span className="font-sans text-[15px] font-semibold">okatech</span>
+          <span className="font-sans text-[15px] font-semibold">ntsagui</span>
           <span className="ml-1 font-mono text-[11px] text-muted-foreground">
             / admin
           </span>

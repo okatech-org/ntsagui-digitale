@@ -1,5 +1,5 @@
 {
-  "name": "okatech",
+  "name": "ntsagui",
   "private": true,
   "scripts": {
     "build": "turbo run build",

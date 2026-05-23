@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Okatech — Studio produit Paris";
+export const alt = "Ntsagui Digitale — Studio produit Paris";
 
 export default async function OpengraphImage() {
   return new ImageResponse(
@@ -37,11 +37,11 @@ export default async function OpengraphImage() {
               letterSpacing: -1,
             }}
           >
-            O
+            N
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div style={{ fontSize: 28, fontWeight: 600, letterSpacing: -0.5 }}>
-              okatech
+              ntsagui
             </div>
             <div style={{ fontSize: 18, color: "#6B6A65" }}>
               studio produit · Paris
@@ -90,7 +90,7 @@ export default async function OpengraphImage() {
                 background: "#4F46E5",
               }}
             />
-            okatech.fr
+            ntsagui.com
           </span>
         </div>
       </div>
