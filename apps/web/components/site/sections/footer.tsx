@@ -2,6 +2,7 @@
 
 import { useLang } from "../lang-provider";
 import { OKA, pick } from "../../../lib/content";
+import { Logo } from "../logo";
 
 export function SiteFooter() {
   const { lang } = useLang();
@@ -13,9 +14,7 @@ export function SiteFooter() {
       <div className="grid gap-10 md:grid-cols-2">
         <div>
           <div className="mb-3.5 flex items-center gap-2.5">
-            <span className="inline-flex h-[22px] w-[22px] items-center justify-center rounded-[5px] bg-primary text-primary-foreground font-mono text-[12px] font-semibold">
-              N
-            </span>
+            <Logo size={26} className="shrink-0" />
             <span className="font-sans text-[15px] font-semibold">ntsagui</span>
           </div>
           <p className="m-0 max-w-[360px] text-[13px] leading-[1.55] text-muted-foreground">

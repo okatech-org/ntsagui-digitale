@@ -21,6 +21,7 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent-soft: var(--accent-soft);
+  --color-brand-highlight: var(--brand-highlight);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -101,9 +102,11 @@
   --muted: #F4F2EC;
   --muted-foreground: rgb(13 13 12 / 0.66);
 
-  --accent: #4F46E5;
+  /* Brand accent — emerald from logo (#16a66b) */
+  --accent: #16A66B;
   --accent-foreground: #FFFFFF;
-  --accent-soft: rgb(79 70 229 / 0.10);
+  --accent-soft: rgb(22 166 107 / 0.10);
+  --brand-highlight: #F4D03F; /* yellow dot from logo */
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #FFFFFF;
@@ -111,10 +114,10 @@
   --border: rgb(13 13 12 / 0.07);
   --border-soft: rgb(13 13 12 / 0.13);
   --input: rgb(13 13 12 / 0.13);
-  --ring: #4F46E5;
+  --ring: #16A66B;
 
-  --success: #22A06B;
-  --success-glow: rgb(34 160 107 / 0.15);
+  --success: #16A66B;
+  --success-glow: rgb(22 166 107 / 0.15);
 
   /* Terminal stays dark in both modes (matches the mockup) */
   --terminal-bg: #0E0E0C;
@@ -122,7 +125,7 @@
   --terminal-dim: rgb(232 229 220 / 0.5);
   --terminal-mid: rgb(232 229 220 / 0.85);
 
-  --syntax-string: #22A06B;
+  --syntax-string: #16A66B;
   --syntax-keyword: #8859BB;
   --syntax-bool: #C45A2E;
 
@@ -157,9 +160,11 @@
   --muted: #1A1A18;
   --muted-foreground: rgb(242 239 230 / 0.66);
 
-  --accent: #A5A0FF;
-  --accent-foreground: #0B0B0A;
-  --accent-soft: rgb(165 160 255 / 0.14);
+  /* Brand accent — mint from logo (#3ed8a3) for dark theme contrast */
+  --accent: #3ED8A3;
+  --accent-foreground: #001A18;
+  --accent-soft: rgb(62 216 163 / 0.14);
+  --brand-highlight: #F4D03F;
 
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: #F2EFE6;
@@ -167,10 +172,10 @@
   --border: rgb(242 239 230 / 0.07);
   --border-soft: rgb(242 239 230 / 0.13);
   --input: rgb(242 239 230 / 0.13);
-  --ring: #A5A0FF;
+  --ring: #3ED8A3;
 
-  --success: #7CC272;
-  --success-glow: rgb(124 194 114 / 0.18);
+  --success: #3ED8A3;
+  --success-glow: rgb(62 216 163 / 0.18);
 
   /* Terminal */
   --terminal-bg: #000000;
@@ -178,7 +183,7 @@
   --terminal-dim: rgb(232 229 220 / 0.5);
   --terminal-mid: rgb(232 229 220 / 0.9);
 
-  --syntax-string: #7CC272;
+  --syntax-string: #3ED8A3;
   --syntax-keyword: #C792EA;
   --syntax-bool: #FFB454;
 
