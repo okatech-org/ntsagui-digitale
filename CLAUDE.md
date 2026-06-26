@@ -72,3 +72,9 @@ If you genuinely think a convention is harmful, surface it. Don't fork silently.
 "Completed" is wrong if anything was skipped silently.
 "Tests pass" is wrong if any were skipped.
 Default to surfacing uncertainty, not hiding it.
+
+## Git workflow
+
+Never create a git branch unless I explicitly ask for one. By default, work and
+commit on the current branch — even when it's `main`. Don't branch off `main`
+"to be safe"; if isolation is needed, I'll ask for it.
