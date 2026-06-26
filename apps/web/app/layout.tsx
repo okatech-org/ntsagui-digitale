@@ -113,7 +113,7 @@ const orgSchema = {
   name: "Ntsagui Digitale",
   alternateName: "Ntsagui",
   url: SITE_URL,
-  email: "admin@ntsagui.com",
+  email: "contact@ntsagui.com",
   telephone: ["+24177781300", "+33661002616"],
   description:
     "Studio produit indépendant basé à Libreville. Plateformes SaaS, transformation digitale et IA appliquée.",

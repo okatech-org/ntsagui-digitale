@@ -232,7 +232,7 @@ export const OKA = {
       "Code, data and AI hosted in Europe by default",
     ],
   },
-  email: "admin@ntsagui.com",
+  email: "contact@ntsagui.com",
   phones: ["+241 77 78 13 00", "+33 (0) 6 61 00 26 16"],
   location: {
     fr: "Libreville, Gabon",
