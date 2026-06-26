@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Ntsagui Digitale — Studio produit Paris";
+export const alt = "Ntsagui Digitale — Studio produit Libreville";
 
 export default async function OpengraphImage() {
   return new ImageResponse(
@@ -44,7 +44,7 @@ export default async function OpengraphImage() {
               ntsagui
             </div>
             <div style={{ fontSize: 18, color: "#6B6A65" }}>
-              studio produit · Paris
+              studio produit · Libreville
             </div>
           </div>
         </div>

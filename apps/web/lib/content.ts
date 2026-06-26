@@ -11,8 +11,8 @@ export const OKA = {
   ],
   hero: {
     super: {
-      fr: "Ntsagui Digitale · Studio produit · Paris",
-      en: "Ntsagui Digitale · Product studio · Paris",
+      fr: "Ntsagui Digitale · Studio produit · Libreville",
+      en: "Ntsagui Digitale · Product studio · Libreville",
     },
     line1: { fr: "Du logiciel", en: "Software" },
     line2: { fr: "qui transforme", en: "that moves" },
@@ -233,10 +233,10 @@ export const OKA = {
     ],
   },
   email: "admin@ntsagui.com",
-  phone: "+33 (0) 6 61 00 26 16",
+  phones: ["+241 77 78 13 00", "+33 (0) 6 61 00 26 16"],
   location: {
-    fr: "50 Avenue des Champs Élysées, 75008 Paris",
-    en: "50 Avenue des Champs Élysées, 75008 Paris",
+    fr: "Libreville, Gabon",
+    en: "Libreville, Gabon",
   } as I18n,
 };
 

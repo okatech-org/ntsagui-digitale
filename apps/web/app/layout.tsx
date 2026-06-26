@@ -37,7 +37,7 @@ const cormorant = Cormorant_Garamond({
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ntsagui.com";
 const TITLE = "Ntsagui Digitale — Du logiciel qui transforme l'activité";
 const DESCRIPTION =
-  "Studio produit indépendant basé à Paris. 6 ans à concevoir, livrer et opérer des plateformes SaaS pour des équipes qui n'ont pas le droit à l'erreur. L'IA dans la boîte à outils — quand elle accélère vraiment.";
+  "Studio produit indépendant basé à Libreville. 6 ans à concevoir, livrer et opérer des plateformes SaaS pour des équipes qui n'ont pas le droit à l'erreur. L'IA dans la boîte à outils — quand elle accélère vraiment.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -55,7 +55,8 @@ export const metadata: Metadata = {
     "plateformes métier",
     "RAG",
     "copilote",
-    "Paris",
+    "Libreville",
+    "Gabon",
     "Next.js",
     "Convex",
   ],
@@ -79,7 +80,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Ntsagui Digitale — Studio produit Paris",
+        alt: "Ntsagui Digitale — Studio produit Libreville",
       },
     ],
   },
@@ -113,17 +114,15 @@ const orgSchema = {
   alternateName: "Ntsagui",
   url: SITE_URL,
   email: "admin@ntsagui.com",
-  telephone: "+33661002616",
+  telephone: ["+24177781300", "+33661002616"],
   description:
-    "Studio produit indépendant basé à Paris. Plateformes SaaS, transformation digitale et IA appliquée.",
+    "Studio produit indépendant basé à Libreville. Plateformes SaaS, transformation digitale et IA appliquée.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "50 Avenue des Champs Élysées",
-    postalCode: "75008",
-    addressLocality: "Paris",
-    addressCountry: "FR",
+    addressLocality: "Libreville",
+    addressCountry: "GA",
   },
-  areaServed: "FR",
+  areaServed: ["GA", "FR"],
   knowsAbout: [
     "SaaS platforms",
     "Applied AI",
