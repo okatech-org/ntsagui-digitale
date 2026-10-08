@@ -1,38 +1,28 @@
+// Symbole et logotype de la charte v1. Les SVG sont générés par
+// scripts/build-brand-mark.mjs — ne pas les modifier à la main.
+
 type LogoProps = {
-  size?: number;
+  size?: number; // hauteur en px
   className?: string;
   title?: string;
 };
 
 export function Logo({ size = 28, className, title = "Ntsagui Digitale" }: LogoProps) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 100 100"
-      width={size}
-      height={size}
-      className={className}
-      role="img"
-      aria-label={title}
-    >
-      <title>{title}</title>
-      <path
-        d="M 18 88 C 18 30 32 12 50 12 C 68 12 82 30 82 88 L 70 88 C 70 36 60 24 50 24 C 40 24 30 36 30 88 Z"
-        fill="#16A66B"
-      />
-      <path
-        d="M 30 88 C 30 40 38 28 50 28 L 50 88 Z"
-        fill="#3ED8A3"
-        opacity="0.9"
-      />
-      <path
-        d="M 30 88 L 30 28 L 70 88 L 70 28"
-        stroke="#001A18"
-        strokeWidth="9"
-        fill="none"
-        strokeLinecap="square"
-      />
-      <circle cx="70" cy="20" r="5.5" fill="#F4D03F" />
-    </svg>
+    <span className={`inline-flex ${className ?? ""}`} role="img" aria-label={title}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/brand/ntsagui-mark-light.svg" alt="" style={{ height: size }} className="w-auto dark:hidden" />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/brand/ntsagui-mark-dark.svg" alt="" style={{ height: size }} className="hidden w-auto dark:block" />
+    </span>
+  );
+}
+
+export function Wordmark({ className }: { className?: string }) {
+  return (
+    <span className={`inline-flex flex-col font-sans leading-none ${className ?? ""}`}>
+      <span className="text-[15px] font-black tracking-[1.2px] text-[#474747] dark:text-white">NTSAGUI</span>
+      <span className="self-end text-[10px] font-bold text-[#3B86F7] dark:text-[#6FA6FA]">Digital</span>
+    </span>
   );
 }
